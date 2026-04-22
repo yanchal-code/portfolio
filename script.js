@@ -146,22 +146,22 @@ document.addEventListener('DOMContentLoaded', () => {
         revealOnScroll.observe(el);
     });
 
-    // --- Contact Form Prevention (Demo) ---
-    const contactForm = document.getElementById('contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const btn = contactForm.querySelector('button');
-            const originalText = btn.innerHTML;
-            btn.innerHTML = 'Sent Successfully! <i class="fas fa-check"></i>';
-            btn.style.background = '#10b981'; // green
+    // // --- Contact Form Prevention (Demo) ---
+    // const contactForm = document.getElementById('contact-form');
+    // if (contactForm) {
+    //     contactForm.addEventListener('submit', (e) => {
+    //         e.preventDefault();
+    //         const btn = contactForm.querySelector('button');
+    //         const originalText = btn.innerHTML;
+    //         btn.innerHTML = 'Sent Successfully! <i class="fas fa-check"></i>';
+    //         btn.style.background = '#10b981'; // green
             
-            setTimeout(() => {
-                btn.innerHTML = originalText;
-                btn.style.background = '';
-                contactForm.reset();
-            }, 3000);
-        });
-    }
+    //         setTimeout(() => {
+    //             btn.innerHTML = originalText;
+    //             btn.style.background = '';
+    //             contactForm.reset();
+    //         }, 3000);
+    //     });
+    // }
 
 });
